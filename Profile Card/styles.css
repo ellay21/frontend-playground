@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3a3a0a;
+  }
+  
+  .card {
+    width: 320px;
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    position: relative;
+    height: 130px;
+    background: linear-gradient(135deg, #a03158 0%, #c04178 100%);
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 0;
+  }
+  
+  .wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-img {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    z-index: 10;
+  }
+  
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 64px 24px 24px;
+    text-align: center;
+    background-color: #181a1b !important;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #c8c3bc;
+    margin-bottom: 4px;
+  }
+  
+  .username {
+    font-size: 14px;
+    color: #9d9488;
+    margin-bottom: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 16px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.3s;
+  }
+  
+  .icon.facebook:hover {
+    background-color: #1877f2;
+    color: white;
+    animation: bounce 0.4s ease;
+  }
+  
+  .icon.twitter:hover {
+    background-color: #1da1f2;
+    color: white;
+    animation: bounce 0.4s ease;
+  }
+  
+  .icon.instagram:hover {
+    background-color: #e1306c;
+    color: white;
+    animation: bounce 0.4s ease;
+  }
+  
+  .icon.linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+    animation: bounce 0.4s ease;
+  }
+  
+  .icon.dribbble:hover {
+    background-color: #ea4c89;
+    color: white;
+    animation: bounce 0.4s ease;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bio {
+    font-size: 14px;
+    color: #b2aca2;
+    line-height: 1.5;
+    margin: 0 auto 24px;
+    max-width: 260px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .btn {
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background-color: #9a1342;
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d43a71;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: #a8a095;
+    border-top-color: #3a3e41;
+    border-right-color: #3a3e41;
+    border-bottom-color: #3a3e41;
+    border-left-color: #3a3e41;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
